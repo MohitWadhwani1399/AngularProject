@@ -24,5 +24,8 @@ export class GridComponent implements OnInit {
     console.log("User Submitted",user);
     this.userInfo.unshift(user)
   }
+  filterwithId(Id){
+    console.log(Id);
+  }
 
 }

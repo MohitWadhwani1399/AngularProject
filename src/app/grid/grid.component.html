@@ -20,12 +20,12 @@
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                 </svg>
             </button></td>
-            <td><input type="text" name="ID" placeholder="ID"  #Id></td>
-            <td><input type="text" name="FirstName" placeholder="First Name"  #FirstName></td>
-            <td><input type="text" name="LastName" placeholder="Last Name"  #LastName></td>
-            <td><input type="text" name="Username" placeholder="Username"  #Username></td>
-            <td><input type="text" name="Email" placeholder="Email"  #email></td>
-            <td><input type="text" name="Age" placeholder="Age"  #age></td>
+            <td><input type="text" name="ID" placeholder="ID" #Id (onkeyup)="filterwithId(Id.value)"></td>
+            <td><input type="text" name="FirstName" placeholder="First Name" #FirstName></td>
+            <td><input type="text" name="LastName" placeholder="Last Name" #LastName></td>
+            <td><input type="text" name="Username" placeholder="Username" #Username></td>
+            <td><input type="text" name="Email" placeholder="Email" #email></td>
+            <td><input type="text" name="Age" placeholder="Age" #age></td>
                     </tr>
                     <tr *ngIf="InputUser">
                         <td><button class="btn btn-primary btn-md adduser" (click)="SubmitUser($event,{Id:Id.value,FirstName:FirstName.value,LastName:LastName.value,Username:Username.value,email:email.value,age:age.value})">
