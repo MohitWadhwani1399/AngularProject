@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
+import { FormsModule } from '@angular/forms';
+import { UserProfileService } from './user-profile.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { GridComponent } from './grid/grid.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

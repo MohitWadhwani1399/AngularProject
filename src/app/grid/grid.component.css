@@ -19,3 +19,13 @@ input{
     border-color:#edf1f7;
     border-radius: 0.3rem;
 }
+
+.btn.adduser{
+    margin: 10px;
+}
+.btn.revoke{
+    margin: 10px;
+}
+.btn.showaddinput{
+    margin:10px;
+}
